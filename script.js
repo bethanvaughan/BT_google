@@ -1,6 +1,6 @@
 const searchButton = document.querySelector("#search");
 searchButton.addEventListener("click", () => {
-  fetch("http://localhost:3000/results")
+  fetch(`http://localhost:3004/results`)
     .then((res) => res.json())
     .then(insertResults);
   window.location.href = "result.html";
