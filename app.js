@@ -63,7 +63,7 @@ const results = [
   },
 ];
 
-app.get("/results", (req, res) => res.send(results));
+app.get("/results", (req, res) => res.send(results.html));
 
 app.listen(port, () =>
   console.log(`Express departing now from http://localhost:${port}`)
